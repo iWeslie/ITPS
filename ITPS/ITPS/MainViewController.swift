@@ -19,7 +19,6 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
     
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController is OperationViewController {
-            /// Add a cover view to the current view and do not switch view controller
             addCoverView()
             return false
         } else {
@@ -27,10 +26,10 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
         }
     }
     
+    /// Add a cover view to the current view and do not switch view controller
     func addCoverView() {
         let coverView = Bundle.main.loadNibNamed("PublishAnnouncementCoverView", owner: nil, options: nil)?.first as! PublishAnnouncementCoverView
         coverView.frame = self.view.frame
-        
         self.view.addSubview(coverView)
     }
 

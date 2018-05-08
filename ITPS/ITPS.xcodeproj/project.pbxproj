@@ -26,6 +26,7 @@
 		D355ACD220A1E7CF00976C21 /* OperationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355ACD120A1E7CF00976C21 /* OperationViewController.swift */; };
 		D355ACD420A1E96800976C21 /* PublishAnnouncementCoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D355ACD320A1E96800976C21 /* PublishAnnouncementCoverView.xib */; };
 		D355ACD620A1E97700976C21 /* PublishAnnouncementCoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355ACD520A1E97700976C21 /* PublishAnnouncementCoverView.swift */; };
+		D3978AE220A1FA7D00EEA9AD /* Designable+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3978AE120A1FA7D00EEA9AD /* Designable+UIImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		D355ACD120A1E7CF00976C21 /* OperationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationViewController.swift; sourceTree = "<group>"; };
 		D355ACD320A1E96800976C21 /* PublishAnnouncementCoverView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PublishAnnouncementCoverView.xib; sourceTree = "<group>"; };
 		D355ACD520A1E97700976C21 /* PublishAnnouncementCoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishAnnouncementCoverView.swift; sourceTree = "<group>"; };
+		D3978AE120A1FA7D00EEA9AD /* Designable+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Designable+UIImageView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				D355ACCB20A1D53400976C21 /* Designable+UILabel.swift */,
 				D355ACBC20A1CB1500976C21 /* Designable+UIView.swift */,
 				D355ACBE20A1CBAF00976C21 /* Designable+UIButton.swift */,
+				D3978AE120A1FA7D00EEA9AD /* Designable+UIImageView.swift */,
 			);
 			path = Designables;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				D355ACBD20A1CB1500976C21 /* Designable+UIView.swift in Sources */,
 				D355ACCA20A1D4B300976C21 /* HomeMainTableViewController.swift in Sources */,
 				D355ACCC20A1D53400976C21 /* Designable+UILabel.swift in Sources */,
+				D3978AE220A1FA7D00EEA9AD /* Designable+UIImageView.swift in Sources */,
 				D355ACBA20A1CA5500976C21 /* LoginViewController.swift in Sources */,
 				D355ACC120A1CD0900976C21 /* Extension+String.swift in Sources */,
 				D355ACBF20A1CBAF00976C21 /* Designable+UIButton.swift in Sources */,

@@ -24,16 +24,44 @@
                     </view>
                     <blurEffect style="light"/>
                 </visualEffectView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pf7-tl-B5U">
+                    <rect key="frame" x="155" y="603" width="64" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="uid-S3-zNY"/>
+                        <constraint firstAttribute="height" constant="64" id="yY4-9w-d3Q"/>
+                    </constraints>
+                    <state key="normal" image="operate_publish_announcement"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建公告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7Z-ie-3Z7">
+                    <rect key="frame" x="162" y="652.5" width="50" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="G7Z-ie-3Z7" secondAttribute="bottom" id="Ldm-jQ-RaJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Pf7-tl-B5U" secondAttribute="bottom" id="MIS-tC-TGj"/>
                 <constraint firstItem="WYt-tB-DZt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Oqy-aX-DbX"/>
+                <constraint firstItem="Pf7-tl-B5U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Spm-gZ-UOa"/>
+                <constraint firstItem="G7Z-ie-3Z7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="eVi-qV-A2f"/>
                 <constraint firstItem="WYt-tB-DZt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fbh-YW-XaO"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="WYt-tB-DZt" secondAttribute="trailing" id="hdN-OE-skh"/>
                 <constraint firstItem="WYt-tB-DZt" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="sFV-fW-WVd"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backEffectView" destination="WYt-tB-DZt" id="2JU-ws-UEv"/>
+                <outlet property="btn" destination="Pf7-tl-B5U" id="DcJ-G6-oWN"/>
+                <outlet property="btnBottomCons" destination="MIS-tC-TGj" id="Hbc-Mw-9SZ"/>
+                <outlet property="labelBottomCons" destination="Ldm-jQ-RaJ" id="MnL-Jr-s8y"/>
+                <outlet property="lbl" destination="G7Z-ie-3Z7" id="Fq9-IZ-46j"/>
+            </connections>
             <point key="canvasLocation" x="33.5" y="53.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="operate_publish_announcement" width="64" height="64"/>
+    </resources>
 </document>
