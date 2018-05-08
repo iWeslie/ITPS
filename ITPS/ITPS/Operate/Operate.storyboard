@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pgZ-s1-faA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--操作-->
+        <scene sceneID="tZt-cS-ejO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pgZ-s1-faA" customClass="OperationViewController" customModule="ITPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1002" title="操作" image="tabbar_icon_operate" selectedImage="tabbar_icon_operate_selected" id="FrH-V8-8tQ"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gZH-Ed-DtI">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OBc-zk-jiw" kind="relationship" relationship="rootViewController" id="8Rl-Wi-VgO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l1Y-u0-OTp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="144.80000000000001" y="142.61083743842366"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ult-ay-cZh">
+            <objects>
+                <viewController id="OBc-zk-jiw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SZ4-Fj-bIe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="y25-CA-eiD"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SKg-K1-ETy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6MB-mA-Bf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_icon_operate" width="24" height="24"/>
+        <image name="tabbar_icon_operate_selected" width="24" height="24"/>
+    </resources>
+</document>
