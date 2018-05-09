@@ -121,6 +121,7 @@
                 <outlet property="backgroundView" destination="t2s-B9-Ab7" id="HhI-Dr-a2G"/>
                 <outlet property="contentView" destination="tMS-ga-p6h" id="eIN-tg-p2w"/>
                 <outlet property="contentViewTopCons" destination="hcg-mU-2hZ" id="xMJ-z1-zZf"/>
+                <outlet property="hintMessageLbl" destination="TY1-dB-ThU" id="prF-M4-78r"/>
             </connections>
             <point key="canvasLocation" x="33.5" y="72.5"/>
         </view>

@@ -12,6 +12,7 @@ class AlertActionView: UIView {
 
     var confirmHandler: (() -> Void)?
     
+    @IBOutlet weak var hintMessageLbl: UILabel!
     @IBOutlet weak var backgroundView: UIView!
     @IBOutlet weak var contentView: ShadowView!
     @IBOutlet weak var contentViewTopCons: NSLayoutConstraint!
@@ -22,9 +23,7 @@ class AlertActionView: UIView {
     
     override func awakeFromNib() {
         self.backgroundColor = UIColor.init(white: 0.0, alpha: 0.0)
-        
-        if isIPHONEX { contentViewTopCons.constant += 24 }
-        
+                
         /// spring content view
         let spring = CASpringAnimation(keyPath: "position.y")
         spring.fromValue =  contentView.layer.position.y + 200

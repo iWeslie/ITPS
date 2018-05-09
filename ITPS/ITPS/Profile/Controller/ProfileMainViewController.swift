@@ -21,7 +21,7 @@ class ProfileMainViewController: UIViewController {
     
     @IBAction func logOutBtnClicked(_ sender: UIButton) {
         /// Log out and erase user login data
-        presentAlertAction {
+        presentAlertAction(hint: "确定要退出登录吗?") {
             print("...")
         }
         

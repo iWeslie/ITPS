@@ -60,6 +60,12 @@ extension UIViewController {
         case inputActionView
     }
     
+    /**
+     Present custom alert input view
+     - parameters:
+        - title: title on the alert view
+        - saveHandler: save button clicked call back
+     */
     func presentAlertInputView(title: String, _ saveHandler: @escaping (_ inputText: String) -> Void) {
         let view = Bundle.main.loadNibNamed("AlertInputView", owner: nil, options: nil)?.first as! AlertInputView
         view.frame = screenRect
@@ -68,9 +74,16 @@ extension UIViewController {
         self.tabBarController?.view.addSubview(view)
     }
     
-    func presentAlertAction(_ confirmHandler: @escaping () -> Void) {
+    /**
+     Present custom alert action view
+     - parameters:
+        - hint: hint message to show on the alert view
+        - confirmHandler: confirm button clicked call back
+     */
+    func presentAlertAction(hint: String, _ confirmHandler: @escaping () -> Void) {
         let view = Bundle.main.loadNibNamed("AlertActionView", owner: nil, options: nil)?.first as! AlertActionView
         view.frame = screenRect
+        view.hintMessageLbl.text = hint
         view.confirmHandler = confirmHandler
         self.tabBarController?.view.addSubview(view)
     }
