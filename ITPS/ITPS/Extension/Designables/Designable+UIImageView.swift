@@ -23,4 +23,32 @@ open class RoundRectImage: UIImageView {
             layer.cornerRadius = self.cornerRadius
         }
     }
+    
+    @IBInspectable
+    public var shadowOpacity: Float = 0.5 {
+        didSet {
+            layer.shadowOpacity = self.shadowOpacity
+        }
+    }
+    
+    @IBInspectable
+    public var shadowOffset: CGSize = CGSize(width: 10, height: 10) {
+        didSet {
+            layer.shadowOffset = self.shadowOffset
+        }
+    }
+    
+    @IBInspectable
+    public var shadowColor: UIColor = UIColor.gray {
+        didSet {
+            layer.shadowColor = self.shadowColor.cgColor
+        }
+    }
+    
+    @IBInspectable
+    public var shadowRadius: CGFloat = 0 {
+        didSet {
+            layer.shadowRadius = self.shadowRadius
+        }
+    }
 }

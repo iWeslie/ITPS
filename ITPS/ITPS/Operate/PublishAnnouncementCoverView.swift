@@ -9,6 +9,8 @@
 import UIKit
 
 class PublishAnnouncementCoverView: UIView {
+    
+    var presentClosure: (() -> Void)?
 
     @IBOutlet weak var backEffectView: UIVisualEffectView!
     @IBOutlet weak var btn: UIButton!
@@ -38,6 +40,17 @@ class PublishAnnouncementCoverView: UIView {
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(dismissCoverView))
         backEffectView.addGestureRecognizer(tap)
+        
+        /// remove the cover view when publish vc dismissed
+        NotificationCenter.default.addObserver(self, selector: #selector(self.removeFromSuperview), name: NSNotification.Name.init(removePublishCoverViewNotification), object: nil)
+        
+    }
+    
+    @IBAction func publishBtnClicked(_ sender: UIButton) {
+        
+        if presentClosure != nil {
+            presentClosure!()
+        }
         
     }
     

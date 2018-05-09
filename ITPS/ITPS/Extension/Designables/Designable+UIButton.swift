@@ -75,19 +75,43 @@ open class ShadowButton: UIButton {
     }
 }
 
-extension UIButton {
+open class CustomizeModuleButton: UIButton {
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     private struct AssociateKeys {
-        static var customProperty = "customProperty"
+        static var customProperty = "moduleTag"
     }
     
     @IBInspectable
-    public var identifier: String {
+    public var moduleTag: Int {
         set(value) {
             objc_setAssociatedObject(self, &AssociateKeys.customProperty, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
         }
         get {
-            return objc_getAssociatedObject(self, &AssociateKeys.customProperty) as! String
+            return objc_getAssociatedObject(self, &AssociateKeys.customProperty) as! Int
         }
     }
 }
+
+//extension UIButton {
+//
+//    private struct AssociateKeys {
+//        static var customProperty = "customProperty"
+//    }
+//
+//    @IBInspectable
+//    public var identifier: String {
+//        set(value) {
+//            objc_setAssociatedObject(self, &AssociateKeys.customProperty, value, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN)
+//        }
+//        get {
+//            return objc_getAssociatedObject(self, &AssociateKeys.customProperty) as! String
+//        }
+//    }
+//}

@@ -11,6 +11,8 @@ public let screenWidth = UIScreen.main.bounds.width
 /// UI Screen bounds height
 public let screenHeight = UIScreen.main.bounds.height
 
+public let screenRect = CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight)
+
 /// Local version of the App
 public let localVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
 
@@ -32,5 +34,24 @@ public let isIPHONE_SE: Bool = { () -> Bool in
     }
 }()
 
+/// Judge whether the app is first launch or not
+public var isFirstLaunch: Bool = { () -> Bool in
+    return UserDefaults.standard.bool(forKey: "firstLaunch")
+}()
+
 /// Public var to access UserDefaults
 public var access_token = UserDefaults.standard.string(forKey: "token")
+
+///// User defaults enum
+//public enum UserDefaultsKeyEnum: String {
+//    /// String
+//    case token = "token"
+//    /// Bool
+//    case everLaunched = "everLaunched"
+//    /// Bool
+//    case firstLaunch = "firstLaunch"
+//    /// [Bool]
+//    case homeModule = "homeModule"
+//
+//}
+

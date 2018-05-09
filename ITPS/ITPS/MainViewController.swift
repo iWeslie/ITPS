@@ -31,6 +31,13 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
         let coverView = Bundle.main.loadNibNamed("PublishAnnouncementCoverView", owner: nil, options: nil)?.first as! PublishAnnouncementCoverView
         coverView.frame = self.view.frame
         self.view.addSubview(coverView)
+        
+        let publishVC = UIStoryboard.init(name: "Publish", bundle: nil).instantiateInitialViewController()!
+        
+        coverView.presentClosure = {
+            self.present(publishVC, animated: true, completion: nil)
+        }
     }
+    
 
 }

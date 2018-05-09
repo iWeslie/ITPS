@@ -568,7 +568,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="9yZ-JD-08o">
                         <nil key="title"/>
-                        <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mnx-QX-YL3">
+                        <button key="titleView" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Mnx-QX-YL3">
                             <rect key="frame" x="164.66666666666666" y="5" width="46" height="34"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
@@ -583,15 +583,24 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outletCollection property="cellCollcetion" destination="787-g8-wK0" collectionClass="NSMutableArray" id="9JA-y2-55Y"/>
+                        <outletCollection property="cellCollcetion" destination="WOu-rr-E2B" collectionClass="NSMutableArray" id="1Ng-KW-q6N"/>
+                        <outletCollection property="cellCollcetion" destination="vzM-kW-3Wb" collectionClass="NSMutableArray" id="dYO-f8-cmo"/>
+                        <outletCollection property="cellCollcetion" destination="dDt-Zc-6vc" collectionClass="NSMutableArray" id="BVz-Hv-raJ"/>
+                        <outletCollection property="cellCollcetion" destination="Gjh-AZ-gLf" collectionClass="NSMutableArray" id="raf-VZ-ePt"/>
+                        <outletCollection property="cellCollcetion" destination="QKU-L7-IwW" collectionClass="NSMutableArray" id="uJI-0m-dAm"/>
+                        <outletCollection property="cellCollcetion" destination="tpk-iC-6G2" collectionClass="NSMutableArray" id="ZeC-4D-byn"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nod-qO-47t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="885.60000000000002" y="159.60591133004928"/>
         </scene>
-        <!--View Controller-->
+        <!--自定义-->
         <scene sceneID="G07-58-9GP">
             <objects>
-                <viewController id="c5x-ka-Drg" sceneMemberID="viewController">
+                <viewController id="c5x-ka-Drg" customClass="HomeCustomizeModuleViewController" customModule="ITPS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efc-ZZ-0XX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -599,13 +608,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-uG-jpl">
                                 <rect key="frame" x="23.000000000000007" y="88" width="109.66666666666669" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNF-8q-cgy">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNF-8q-cgy" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="29.666666666666664" y="40" width="49.999999999999993" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="cdr-aB-afx"/>
                                             <constraint firstAttribute="width" constant="50" id="vcs-UW-b3B"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_notice_info"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="KYg-cI-ykw"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公告信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="066-Wg-fcC">
                                         <rect key="frame" x="22.333333333333336" y="100" width="66" height="20"/>
@@ -637,13 +654,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q5T-P7-o8h">
                                 <rect key="frame" x="132.66666666666666" y="88" width="109.66666666666666" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-Xe-fCL">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSr-Xe-fCL" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="30" y="40" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="1dO-L7-0gw"/>
                                             <constraint firstAttribute="height" constant="50" id="nmB-9Z-WHX"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_system_alert"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="g5e-r6-Wjj"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="系统报警" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kZL-uL-xdT">
                                         <rect key="frame" x="22" y="100" width="66" height="20"/>
@@ -679,13 +704,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o3j-gL-wrU">
                                 <rect key="frame" x="242.33333333333334" y="88" width="109.66666666666666" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKW-43-l4G">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKW-43-l4G" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="28.999999999999972" y="40" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="8Pb-uM-FLD"/>
                                             <constraint firstAttribute="width" constant="50" id="eCF-8X-kl1"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_things_todo"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="in4-aC-hbd"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="待办事项" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jn6-AI-kYU">
                                         <rect key="frame" x="20.999999999999972" y="100" width="66" height="20"/>
@@ -718,13 +751,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13g-3w-Z3t">
                                 <rect key="frame" x="23.000000000000007" y="208" width="109.66666666666669" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZT-gW-XXc">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZT-gW-XXc" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="29.666666666666664" y="40" width="49.999999999999993" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Yte-EH-DUP"/>
                                             <constraint firstAttribute="height" constant="50" id="h2U-6q-cFd"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_things_check"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="3"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="HTw-KN-BJU"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事项查询" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6J-vh-IIP">
                                         <rect key="frame" x="22.333333333333336" y="100" width="66" height="20"/>
@@ -757,13 +798,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JVQ-wa-195">
                                 <rect key="frame" x="132" y="208" width="109.66666666666669" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rI-oo-a01">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1rI-oo-a01" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="30" y="40" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="13u-qd-anH"/>
                                             <constraint firstAttribute="width" constant="50" id="edH-l5-c8w"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_current_duty"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="jAG-t2-25J"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前排班信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clg-DF-NFn">
                                         <rect key="frame" x="6" y="100" width="98" height="20"/>
@@ -799,13 +848,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLr-Ao-syl">
                                 <rect key="frame" x="241.99999999999997" y="208" width="109.66666666666666" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReC-jR-uFH">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ReC-jR-uFH" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="30" y="40" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="JQP-c8-0YV"/>
                                             <constraint firstAttribute="width" constant="50" id="vKJ-OZ-2rI"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_current_mission"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="Tej-nC-PyQ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前巡检任务" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WEr-n1-Jxe">
                                         <rect key="frame" x="6" y="100" width="98" height="20"/>
@@ -838,13 +895,21 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ls6-6p-e2E">
                                 <rect key="frame" x="23.000000000000007" y="328" width="109.66666666666669" height="120"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s93-5X-PP3">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s93-5X-PP3" customClass="CustomizeModuleButton" customModule="ITPS" customModuleProvider="target">
                                         <rect key="frame" x="29.666666666666664" y="40" width="49.999999999999993" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="GOX-Mc-Gee"/>
                                             <constraint firstAttribute="height" constant="50" id="PMv-VU-TnC"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="home_chart_check"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="moduleTag">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="customMoudleBtnClicked:" destination="c5x-ka-Drg" eventType="touchUpInside" id="Gcp-1C-UYt"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报表查询" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gtQ-iE-6KI">
                                         <rect key="frame" x="22.333333333333336" y="100" width="66" height="20"/>
@@ -910,6 +975,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bOS-nA-738"/>
                     </view>
+                    <navigationItem key="navigationItem" title="自定义" id="1S3-Ic-w0Z"/>
+                    <connections>
+                        <outletCollection property="checkBoxImgCollcetion" destination="VaE-03-njA" collectionClass="NSMutableArray" id="1Bi-cV-UsP"/>
+                        <outletCollection property="checkBoxImgCollcetion" destination="dI0-lk-Db8" collectionClass="NSMutableArray" id="A3y-17-dma"/>
+                        <outletCollection property="checkBoxImgCollcetion" destination="w91-tB-AyV" collectionClass="NSMutableArray" id="PFM-AU-nZc"/>
+                        <outletCollection property="checkBoxImgCollcetion" destination="UTt-NI-KF0" collectionClass="NSMutableArray" id="whk-ah-84q"/>
+                        <outletCollection property="checkBoxImgCollcetion" destination="vKG-bw-kee" collectionClass="NSMutableArray" id="s2s-3A-ruT"/>
+                        <outletCollection property="checkBoxImgCollcetion" destination="dAR-TD-vAh" collectionClass="NSMutableArray" id="JW4-vy-5jC"/>
+                        <outletCollection property="checkBoxImgCollcetion" destination="66N-vy-9Jh" collectionClass="NSMutableArray" id="MLW-oT-2Jc"/>
+                        <outletCollection property="moduleBtnCollection" destination="cNF-8q-cgy" collectionClass="NSMutableArray" id="Oux-JR-veU"/>
+                        <outletCollection property="moduleBtnCollection" destination="nSr-Xe-fCL" collectionClass="NSMutableArray" id="EXD-Hh-nYI"/>
+                        <outletCollection property="moduleBtnCollection" destination="NKW-43-l4G" collectionClass="NSMutableArray" id="qWt-YG-PqS"/>
+                        <outletCollection property="moduleBtnCollection" destination="bZT-gW-XXc" collectionClass="NSMutableArray" id="4DF-iZ-iet"/>
+                        <outletCollection property="moduleBtnCollection" destination="1rI-oo-a01" collectionClass="NSMutableArray" id="WcE-nv-Pnh"/>
+                        <outletCollection property="moduleBtnCollection" destination="ReC-jR-uFH" collectionClass="NSMutableArray" id="rKE-CR-VGe"/>
+                        <outletCollection property="moduleBtnCollection" destination="s93-5X-PP3" collectionClass="NSMutableArray" id="K96-W4-zRW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2A-Bb-aUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

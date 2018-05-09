@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32A85E920A280CF000AEEC6 /* ProfileMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85E820A280CF000AEEC6 /* ProfileMainViewController.swift */; };
+		D32A85EB20A2869D000AEEC6 /* ProfileInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85EA20A2869D000AEEC6 /* ProfileInfoViewController.swift */; };
+		D32A85ED20A28BA8000AEEC6 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85EC20A28BA8000AEEC6 /* Extension+UIViewController.swift */; };
+		D32A85EF20A29269000AEEC6 /* HomeCustomizeModuleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85EE20A29269000AEEC6 /* HomeCustomizeModuleViewController.swift */; };
+		D32A85F220A2F63E000AEEC6 /* AlertInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32A85F120A2F63E000AEEC6 /* AlertInputView.xib */; };
+		D32A85F420A2F651000AEEC6 /* AlertActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32A85F320A2F651000AEEC6 /* AlertActionView.xib */; };
+		D32A85F620A2F668000AEEC6 /* AlertInputActionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D32A85F520A2F668000AEEC6 /* AlertInputActionView.xib */; };
+		D32A85F820A2F678000AEEC6 /* AlertInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85F720A2F678000AEEC6 /* AlertInputView.swift */; };
+		D32A85FA20A2F686000AEEC6 /* AlertActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85F920A2F686000AEEC6 /* AlertActionView.swift */; };
+		D32A85FC20A2F68D000AEEC6 /* AlertInputActionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85FB20A2F68D000AEEC6 /* AlertInputActionView.swift */; };
+		D32A85FE20A326B6000AEEC6 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A85FD20A326B6000AEEC6 /* AboutViewController.swift */; };
+		D32A860120A327AE000AEEC6 /* Publish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D32A860020A327AE000AEEC6 /* Publish.storyboard */; };
+		D32A860620A32845000AEEC6 /* PublishAnnouncementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32A860520A32845000AEEC6 /* PublishAnnouncementViewController.swift */; };
 		D355AC9820A1B8F900976C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D355AC9720A1B8F900976C21 /* AppDelegate.swift */; };
 		D355AC9D20A1B8F900976C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D355AC9B20A1B8F900976C21 /* Main.storyboard */; };
 		D355AC9F20A1B8FE00976C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D355AC9E20A1B8FE00976C21 /* Assets.xcassets */; };
@@ -30,6 +43,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D32A85E820A280CF000AEEC6 /* ProfileMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMainViewController.swift; sourceTree = "<group>"; };
+		D32A85EA20A2869D000AEEC6 /* ProfileInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoViewController.swift; sourceTree = "<group>"; };
+		D32A85EC20A28BA8000AEEC6 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		D32A85EE20A29269000AEEC6 /* HomeCustomizeModuleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCustomizeModuleViewController.swift; sourceTree = "<group>"; };
+		D32A85F120A2F63E000AEEC6 /* AlertInputView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertInputView.xib; sourceTree = "<group>"; };
+		D32A85F320A2F651000AEEC6 /* AlertActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertActionView.xib; sourceTree = "<group>"; };
+		D32A85F520A2F668000AEEC6 /* AlertInputActionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertInputActionView.xib; sourceTree = "<group>"; };
+		D32A85F720A2F678000AEEC6 /* AlertInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInputView.swift; sourceTree = "<group>"; };
+		D32A85F920A2F686000AEEC6 /* AlertActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertActionView.swift; sourceTree = "<group>"; };
+		D32A85FB20A2F68D000AEEC6 /* AlertInputActionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertInputActionView.swift; sourceTree = "<group>"; };
+		D32A85FD20A326B6000AEEC6 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		D32A860020A327AE000AEEC6 /* Publish.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Publish.storyboard; sourceTree = "<group>"; };
+		D32A860520A32845000AEEC6 /* PublishAnnouncementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishAnnouncementViewController.swift; sourceTree = "<group>"; };
 		D355AC9420A1B8F900976C21 /* ITPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D355AC9720A1B8F900976C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D355AC9C20A1B8F900976C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -65,6 +91,76 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D32A85E520A280A1000AEEC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D32A85E620A280B3000AEEC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D32A85E820A280CF000AEEC6 /* ProfileMainViewController.swift */,
+				D32A85EA20A2869D000AEEC6 /* ProfileInfoViewController.swift */,
+				D32A85FD20A326B6000AEEC6 /* AboutViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D32A85E720A280B7000AEEC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D32A85F020A2F5C7000AEEC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D32A85F120A2F63E000AEEC6 /* AlertInputView.xib */,
+				D32A85F720A2F678000AEEC6 /* AlertInputView.swift */,
+				D32A85F320A2F651000AEEC6 /* AlertActionView.xib */,
+				D32A85F920A2F686000AEEC6 /* AlertActionView.swift */,
+				D32A85F520A2F668000AEEC6 /* AlertInputActionView.xib */,
+				D32A85FB20A2F68D000AEEC6 /* AlertInputActionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D32A85FF20A32777000AEEC6 /* Publish */ = {
+			isa = PBXGroup;
+			children = (
+				D32A860220A3280F000AEEC6 /* Model */,
+				D32A860320A32814000AEEC6 /* View */,
+				D32A860420A32817000AEEC6 /* Controller */,
+				D32A860020A327AE000AEEC6 /* Publish.storyboard */,
+			);
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		D32A860220A3280F000AEEC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D32A860320A32814000AEEC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D32A860420A32817000AEEC6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D32A860520A32845000AEEC6 /* PublishAnnouncementViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		D355AC8B20A1B8F900976C21 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +184,7 @@
 				D355ACB620A1CA3500976C21 /* Login */,
 				D355ACA920A1C11700976C21 /* Home */,
 				D355ACAA20A1C12900976C21 /* Operate */,
+				D32A85FF20A32777000AEEC6 /* Publish */,
 				D355ACAB20A1C13800976C21 /* Profile */,
 				D355ACB220A1C4DA00976C21 /* Extension */,
 				D355AC9720A1B8F900976C21 /* AppDelegate.swift */,
@@ -125,6 +222,9 @@
 		D355ACAB20A1C13800976C21 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D32A85E520A280A1000AEEC6 /* Model */,
+				D32A85E720A280B7000AEEC6 /* View */,
+				D32A85E620A280B3000AEEC6 /* Controller */,
 				D355ACB020A1C16500976C21 /* Profile.storyboard */,
 			);
 			path = Profile;
@@ -136,6 +236,7 @@
 				D355ACC220A1CD2600976C21 /* Networking */,
 				D355ACBB20A1CB0B00976C21 /* Designables */,
 				D355ACC020A1CD0900976C21 /* Extension+String.swift */,
+				D32A85EC20A28BA8000AEEC6 /* Extension+UIViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -143,6 +244,7 @@
 		D355ACB320A1C51300976C21 /* Public */ = {
 			isa = PBXGroup;
 			children = (
+				D32A85F020A2F5C7000AEEC6 /* View */,
 				D355ACB420A1C62800976C21 /* ConstantValue.swift */,
 			);
 			path = Public;
@@ -193,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				D355ACC920A1D4B300976C21 /* HomeMainTableViewController.swift */,
+				D32A85EE20A29269000AEEC6 /* HomeCustomizeModuleViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -256,11 +359,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D355ACB120A1C16500976C21 /* Profile.storyboard in Resources */,
+				D32A85F420A2F651000AEEC6 /* AlertActionView.xib in Resources */,
 				D355ACA220A1B8FE00976C21 /* LaunchScreen.storyboard in Resources */,
+				D32A85F620A2F668000AEEC6 /* AlertInputActionView.xib in Resources */,
 				D355ACD420A1E96800976C21 /* PublishAnnouncementCoverView.xib in Resources */,
 				D355ACB820A1CA4100976C21 /* Login.storyboard in Resources */,
 				D355AC9F20A1B8FE00976C21 /* Assets.xcassets in Resources */,
 				D355AC9D20A1B8F900976C21 /* Main.storyboard in Resources */,
+				D32A860120A327AE000AEEC6 /* Publish.storyboard in Resources */,
+				D32A85F220A2F63E000AEEC6 /* AlertInputView.xib in Resources */,
 				D355ACAF20A1C15A00976C21 /* Operate.storyboard in Resources */,
 				D355ACAD20A1C15000976C21 /* Home.storyboard in Resources */,
 			);
@@ -276,14 +383,23 @@
 				D355ACD620A1E97700976C21 /* PublishAnnouncementCoverView.swift in Sources */,
 				D355ACBD20A1CB1500976C21 /* Designable+UIView.swift in Sources */,
 				D355ACCA20A1D4B300976C21 /* HomeMainTableViewController.swift in Sources */,
+				D32A860620A32845000AEEC6 /* PublishAnnouncementViewController.swift in Sources */,
+				D32A85EF20A29269000AEEC6 /* HomeCustomizeModuleViewController.swift in Sources */,
 				D355ACCC20A1D53400976C21 /* Designable+UILabel.swift in Sources */,
+				D32A85E920A280CF000AEEC6 /* ProfileMainViewController.swift in Sources */,
 				D3978AE220A1FA7D00EEA9AD /* Designable+UIImageView.swift in Sources */,
+				D32A85FA20A2F686000AEEC6 /* AlertActionView.swift in Sources */,
+				D32A85EB20A2869D000AEEC6 /* ProfileInfoViewController.swift in Sources */,
 				D355ACBA20A1CA5500976C21 /* LoginViewController.swift in Sources */,
+				D32A85ED20A28BA8000AEEC6 /* Extension+UIViewController.swift in Sources */,
+				D32A85FC20A2F68D000AEEC6 /* AlertInputActionView.swift in Sources */,
+				D32A85F820A2F678000AEEC6 /* AlertInputView.swift in Sources */,
 				D355ACC120A1CD0900976C21 /* Extension+String.swift in Sources */,
 				D355ACBF20A1CBAF00976C21 /* Designable+UIButton.swift in Sources */,
 				D355ACD220A1E7CF00976C21 /* OperationViewController.swift in Sources */,
 				D355ACCE20A1E33C00976C21 /* MainViewController.swift in Sources */,
 				D355AC9820A1B8F900976C21 /* AppDelegate.swift in Sources */,
+				D32A85FE20A326B6000AEEC6 /* AboutViewController.swift in Sources */,
 				D355ACB520A1C62800976C21 /* ConstantValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

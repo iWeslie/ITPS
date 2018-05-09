@@ -31,6 +31,9 @@
                         <constraint firstAttribute="height" constant="64" id="yY4-9w-d3Q"/>
                     </constraints>
                     <state key="normal" image="operate_publish_announcement"/>
+                    <connections>
+                        <action selector="publishBtnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="YLq-ZN-Pkl"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建公告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G7Z-ie-3Z7">
                     <rect key="frame" x="162" y="652.5" width="50" height="14.5"/>
